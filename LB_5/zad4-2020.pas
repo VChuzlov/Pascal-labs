@@ -1,4 +1,7 @@
-﻿program z4;
+program z4;
+const
+  low = 1;
+  high = 100;
 var
   a: array of array of integer;
   i, j: integer;
@@ -11,13 +14,13 @@ begin
     begin
       for j := 0 to 3 do
         begin
-          a[i, j] := random(1, 100);
+          a[i, j] := random(low, high);
           write(a[i, j] :8);
         end;
       writeln;
     end;
   writeln;
-  min := 100;
+  min := high;
   for i := 0 to 3 do
     begin
       max := a[i, 0];
