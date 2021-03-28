@@ -1,8 +1,8 @@
 ﻿function SumOfAverage(a: array [,] of integer): real;
 begin
   result := 0.0;
-  for var i := 0 to a.RowCount-1 do
-    result += a.Row(i).Average
+  for var i := 0 to a.ColCount-1 do
+    result += a.Col(i).Average
 end;
 
 function get_z(x: array of integer; sa: real; b: real): array of real;
