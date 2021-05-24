@@ -13,7 +13,7 @@ procedure p(t:real; c: a; var f: a);
 begin
   f[1]:= - k1 * c[1] - k2 * c[1] + k3 * c[3];
   f[2]:= k1 * c[1];
-  f[3]:= k1 * c[1] - k3 * c[3];
+  f[3]:= k2 * c[1] - k3 * c[3];
 end;
 procedure El(t, tk, h: real; var c: a);
 var
