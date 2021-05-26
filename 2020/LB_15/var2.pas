@@ -13,7 +13,7 @@ procedure p(t:real; c: a; var f: a);
 begin
   f[1]:= - k1 * c[1] * sqr(c[2]) + k2 * sqr(c[3]) * c[3];
   f[2]:= 2 * (-k1 * c[1] * sqr(c[2]) + k2 * sqr(c[3]) * c[3]);
-  f[3]:= 3 * (-k1 * c[1] * sqr(c[2]) + k2 * sqr(c[3]) * c[3]);
+  f[3]:= 3 * (k1 * c[1] * sqr(c[2]) - k2 * sqr(c[3]) * c[3]);
 end;
 procedure El(t, tk, h: real; var c: a);
 var
@@ -80,7 +80,7 @@ begin
   c[2]:= 0.8;
   c[3]:= 0.5;
   writeln('  t', '       CA','        CB','        CC', '       X');
-  El(t, 5, 0.1, c);
+//  El(t, 5, 0.1, c);
   c[1]:= 0.64;
   c[2]:= 0.8;
   c[3]:= 0.5;
