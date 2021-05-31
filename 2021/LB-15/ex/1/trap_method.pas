@@ -1,6 +1,6 @@
 ﻿function f(x: real): real;
 begin
-  result := exp(1 / x) / x ** 0.5   
+  result := exp(1 / x) / x ** 2   
 end;
 
 
